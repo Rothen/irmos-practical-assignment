@@ -34,6 +34,9 @@ try:
     for i in range(len(midspan_data['_time'])):
         midspan_data['_time'][i] = datetime.fromisoformat(midspan_data['_time'][i])
 
+    for i in range(5):
+        print(f"Time: {midspan_data['_time'][i]}, Stress Cycle: {midspan_data['stress_cycle'][i]}, Pos_na: {midspan_data['pos_na'][i]}")
+
     visualize(midspan_data)
 except Exception as e:
     print("Error retrieving data:", str(e))

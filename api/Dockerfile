@@ -5,10 +5,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /api
 
-COPY api/requirements.txt .
+COPY api/* .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY api ./api
 
 EXPOSE 8000
-CMD ["uvicorn", "api.app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python", "app.py"]

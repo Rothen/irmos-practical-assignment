@@ -9,3 +9,4 @@ flask_sock==0.7.0
 flask_cors==6.0.1
 flask_smorest==0.46.2
 marshmallow==4.1.0
+psycopg2-binary==2.9.11

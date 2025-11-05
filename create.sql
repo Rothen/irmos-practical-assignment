@@ -1,5 +1,5 @@
 CREATE TABLE midspan (
-  ts TIMESTAMPTZ,
+  time TIMESTAMPTZ,
   Fat_cycle_bot FLOAT,
   Pos_na FLOAT
 ); 
